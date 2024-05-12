@@ -35,12 +35,12 @@ app.use("/api", MeetingRouters)
 
 
 
-var server = app.listen(port, ip, () => {
-    console.log(`Server is running on port number ${ip}:${port}`)
-})
-// var server = app.listen(port, () => {
+// var server = app.listen(port, ip, () => {
 //     console.log(`Server is running on port number ${ip}:${port}`)
 // })
+var server = app.listen(port, () => {
+    console.log(`Server is running on port number ${ip}:${port}`)
+})
 
 
 const io = new Server(server, {
