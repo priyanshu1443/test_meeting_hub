@@ -12,9 +12,9 @@ dotenv.config()
 Connection()
 
 const port = process.env.PORT
-const ip = process.env.IP_ADDRESS
+// const ip = process.env.IP_ADDRESS
 
-console.log(port, ip)
+// console.log(port, ip)
 
 
 const app = express()
